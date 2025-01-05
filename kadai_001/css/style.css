@@ -1,0 +1,91 @@
+body {
+  font-family: Noto Sans Japanese;
+  color: #000000;
+  background-color: #ffffff;
+}
+#header {
+  display: flex;
+  justify-content: space-around;
+}
+#header a {
+  text-decoration: none;
+  font-size: 34px;
+  position: relative;
+  top: 30px;
+  color: #000000;
+  /* padding-left: 10px; */
+}
+#header nav {
+  justify-content: space-around;
+}
+#header h1 {
+  border: solid;
+  font-size: 34px;
+}
+/* header img {
+  width: 100%;
+} */
+#img {
+  content:url("../images/main.png") ;
+  width: 100%;
+}
+.section {
+  width: 70%;
+  margin: 0 auto;
+}
+.section h2 {
+  text-align: center;
+}
+#selfPhoto {
+  border-radius: 150px;
+}
+.article {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.article h3 {
+  font-size: 24px;
+}
+.works {
+  width: 15rem;
+}
+.works > img {
+  width: 15rem;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  #header a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #header h1 {
+    font-size: 24px;
+  }
+  .article {
+    flex-direction: column;
+  }
+  #aboutMe > ul {
+    padding: 0 0 0 25px;
+    margin: 10px;
+    width: 100%;
+  }
+  #aboutMe > h3 {
+    margin: 0;
+  }
+  #works {
+    margin: 0 5px;
+    width: 100%;
+  }
+  .works {
+    width: 100%;
+    text-align: center;
+  }
+  .works img {
+    width: 100%;
+  }
+}
